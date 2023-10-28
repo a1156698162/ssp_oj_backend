@@ -10,10 +10,10 @@ import com.ssp.soj.common.ResultUtils;
 import com.ssp.soj.constant.UserConstant;
 import com.ssp.soj.exception.BusinessException;
 import com.ssp.soj.exception.ThrowUtils;
-import com.ssp.soj.model.dto.post.PostAddRequest;
+import com.ssp.soj.model.dto.post.PostUpdateRequest;
+import com.ssp.soj.model.dto.question.QuestionAddRequest;
 import com.ssp.soj.model.dto.post.PostEditRequest;
 import com.ssp.soj.model.dto.post.PostQueryRequest;
-import com.ssp.soj.model.dto.post.PostUpdateRequest;
 import com.ssp.soj.model.entity.Post;
 import com.ssp.soj.model.entity.User;
 import com.ssp.soj.model.vo.PostVO;
@@ -59,7 +59,7 @@ public class PostController {
      * @return
      */
     @PostMapping("/add")
-    public BaseResponse<Long> addPost(@RequestBody PostAddRequest postAddRequest, HttpServletRequest request) {
+    public BaseResponse<Long> addPost(@RequestBody QuestionAddRequest postAddRequest, HttpServletRequest request) {
         if (postAddRequest == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
