@@ -5,15 +5,11 @@ import com.ssp.soj.common.BaseResponse;
 import com.ssp.soj.common.ErrorCode;
 import com.ssp.soj.common.ResultUtils;
 import com.ssp.soj.exception.BusinessException;
-import com.ssp.soj.exception.ThrowUtils;
-import com.ssp.soj.model.dto.question.QuestionQueryRequest;
 import com.ssp.soj.model.dto.questionsubmit.QuestionSubmitAddRequest;
 import com.ssp.soj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
-import com.ssp.soj.model.entity.Question;
 import com.ssp.soj.model.entity.QuestionSubmit;
 import com.ssp.soj.model.entity.User;
 import com.ssp.soj.model.vo.QuestionSubmitVO;
-import com.ssp.soj.model.vo.QuestionVO;
 import com.ssp.soj.service.QuestionSubmitService;
 import com.ssp.soj.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -32,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
  * @from <a href="https://ssp.icu">编程导航知识星球</a>
  */
 @RestController
-@RequestMapping("/question_submit")
+@RequestMapping("/question/question_submit")
 @Slf4j
 public class QuestionSubmitController {
 
