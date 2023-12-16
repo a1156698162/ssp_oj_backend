@@ -1,4 +1,4 @@
-package com.ssp.soj.model.dto.questionsubmit;
+package com.ssp.soj.judge.codesandox.model;
 
 import lombok.Data;
 
